@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>payment</title>
+</head>
+<link rel="icon" type="text/css" href="img/icon.png">
+<style type="text/css">
+*{
+	margin: 0px;
+}
+	.upper{
+		height: 60px;
+		width: auto;
+		background-color:white;
+	}
+	.lower{
+		background-color: #45B39D;
+		height: 30px;
+		width: auto;
+		padding: 12px;
+	}
+	.lower2{
+		background-color: white;
+		height: 30px;
+		width: auto;
+		padding: 12px;
+	}
+	.btn{
+		border: 1px solid white;
+		padding: 10px 30px;
+		color:black;
+		text-decoration: none;
+		margin-left: 40px;
+		background-color: white;		
+	}
+	.btn:hover{
+		background-color: white;
+		color:black;
+		transition: 0.6s ease;
+		margin-top: 0px;
+	}
+	.footer{
+		background-color: #45B39D;
+		height: 30px;
+		width: auto;  
+		padding: 12px;
+	}
+	.one{
+		height: 350px;
+		border-radius: 10px;
+		background-color: white;
+		margin:8px;
+		margin-right: 12px;
+		position: center;
+		align-content: center;
+	}
+	.two,.three,.four,.five,.six,.seven{
+		height: 400px;
+		border-radius: 10px;
+		background-color: white;
+		margin:8px;
+		margin-right: 12px;
+		position: center;
+		align-content: center;
+	}
+	ul.navigation{
+		list-style-type: none;
+		float: right;
+		
+	}
+	ul.navigation li{
+		display: inline-block;
+	}
+	ul.navigation li a{
+		text-decoration: none;
+		color:white;
+		font-size: 25px;
+		font-family: Century Gothic;
+		padding:5px 20px;
+		border:1px solid transparent;
+		transition: 0.6s ease;	
+	}
+	ul.navigation li a:hover{
+		background-color: white;
+		color:black;
+	}
+	ul.menu{
+		list-style-type: none;
+		float: right;
+		margin-right: 15%;
+		margin-left: 10%;
+		
+	}
+	ul.menu li{
+		display: inline-block;
+
+	}
+	ul.menu li a{
+		text-decoration: none;
+		color:black;
+		font-size: 25px;
+		font-family: Century Gothic;
+		padding:5px 20px;
+		border:1px solid transparent;
+		transition: 0.6s ease;
+
+	}
+	.shipping{
+		width: auto;
+		height: 600px;
+		background-color: white; 
+	}
+	
+	h1{
+		padding-top: 20px;
+		padding-bottom: 10px;
+		background-color: white;
+		width: 430px;
+		margin-top: 10px;
+	}
+	.continue:hover{
+		padding: 12px;
+	}
+	.continue{
+		background-color: orange;
+		padding: 10px;
+		font-size: 20px;
+		text-decoration:none;
+		color: black;
+		box-shadow: 2px 2px 5px grey;
+		text-shadow: 2px 2px 5px grey;
+		border-radius: 5px;
+	}
+	.details{
+		width: 400px;
+		height: auto;
+		padding: 15px;
+		font-size: 20px;
+		margin-top: 2px;
+		background-color: white;
+		text-align: left;
+		border-radius: 5px;
+	}
+	.shipping{
+		background-color: #DCDCDC;
+
+	}
+	.input{
+		padding: 10px;
+		margin-top: 10px;
+	}
+	.title{
+		margin-top: 10px;
+	}
+	.verify{
+		background-color: orange;
+		padding: 10px;
+		margin-left: 20px;
+		font-size: 17px;
+		text-decoration:none;
+		color: black;
+		box-shadow: 2px 2px 5px grey;
+		text-shadow: 2px 2px 5px grey;
+		border-radius: 5px;
+	}
+	.submit{
+		width: 150px;
+		font-size: 15px;
+		padding: 10px;
+		margin-top: 10px;
+		background-color: orange;
+		border-radius: 5px;
+	}
+
+	</style>
+<body bgcolor="#DCDCDC">
+<header class="upper">
+	<img src="img/logo.jpg" style="height: 60px;">
+</header>
+<header class="lower">
+   		<ul class="navigation">
+   			<li class="active"><a href="home.html">Home</a></li>
+   			<li><a href="services.html">Services</a></li>
+   			<li><a href="about.html">About</a></li>
+   			<li><a href="feedback.html">Feedback</a></li>
+   			<li><a href="contact.html">Contact</a></li>
+   		</ul>
+</header>
+<header class="lower2">
+	<ul class="menu">
+   			<li class="active"><a href="menlist.html" target="blank">Men's Fashion</a></li>
+   			<li><a href="womenlist.html" target="blank">Women's Fashions</a></li>
+   			<li><a href="mobilelist.html" target="blank">Mobiles</a></li>
+   			<li><a href="laptoplist.html" target="blank">Laptops</a></li>
+   		</ul>
+	
+</header>
+<center>
+<section class="shipping">
+	<h1>Select a payment method</h1>
+	
+	<details class="details">
+     				<summary>ShopMe Pay UPI/BHIM UPI</summary> 
+     				<form>
+     					<p class="title">Please enter existing BHIM UPI ID</p>
+     				<p><input class="input" type="text" name="id" placeholder="Ex:PhoneNumber@uid" required=""><input style="margin-left: 10px;" class="submit" type="submit" value="Verify"></p>
+     				
+     				</form>
+     			</details>
+     	<details class="details">
+     				<summary>Add Debit/Credit/ATM Card</summary> 
+                    <form method="post" action="order.html">
+                    	<p><input class="input" type="text" name="name" placeholder="Card holder name" required=""></p>
+
+                    <p><input class="input" type="text" name="number" placeholder="Card number" required=""></p>
+     	
+     			    <p><input class="input" type="number" name="number"  placeholder="Expiry MM" min="01" max="12" required="">
+
+     			    <input  class="input" type="number" name="number"  placeholder="Expiry YYYY" min="2010" max="2025" required=""><br>
+     			 
+     			    <p><input class="submit" type="submit" value="Add your card"></p>
+                    </form>
+     			    </details>
+    	<details class="details">
+     				<summary>Net Banking</summary> 
+     				Not available...<a href="">Why ?</a>
+     			</details>
+               <form method="post" action="order.html">
+
+	<input style="margin-left: 10px;" class="submit" type="submit" value="Order now"></form>
+
+</section>
+<footer class="footer" style="font-family: Century Gothic;font-size: 20px;"><h3 align="center">&copy2019 All Rights Reserved. Developed By ShopMe.com</h3></footer>
+</center>
+</body>
+</html>

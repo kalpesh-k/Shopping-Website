@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<style type="text/css">
+	*{
+		margin:0px;
+		padding: 0px;
+		font-family: Century Gothic;
+	}
+	header{
+		background-image:url(img/backmain.png);
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+	}
+	ul{
+		list-style-type: none;
+		float: right;
+		margin-top: 25px;
+		margin-right: 20px;
+	}
+	ul li{
+		display: inline-block;
+	}
+	ul li a{
+		text-decoration: none;
+		color:white;
+		padding:5px 20px;
+		border:1px solid transparent;
+		transition: 0.6s ease;
+	}
+	ul li a:hover{
+		background-color: white;
+		color:black;
+	}
+	.active a{
+		background-color: white;
+		color:black;
+	}
+	.title{
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+	}
+	.title h1{
+		color:white;
+		font-size: 70px;
+	}
+	.buttons{
+		position: absolute;
+		top:60%;
+		left:50%;
+		transform: translate(-50%,-50%);
+	}
+	.btn{
+		border: 1px solid white;
+		padding: 10px 30px;
+		color:white;
+		text-decoration: none;
+	}
+	.btn:hover{
+		background-color: white;
+		color:black;
+		transition: 0.6s ease;
+	}
+
+</style>
+<body>
+   <header>
+   	<div class="main">
+   		<ul>
+   			<li class="active"><a href="home.html">Home</a></li>
+   			<li><a href="services">Services</a></li>
+   			<li><a href="about.html">About</a></li>
+   			<li><a href="feedback">Feedback</a></li>
+   			<li><a href="contact">Contact</a></li>
+   		</ul>
+   	</div>
+   	<div class="title">
+   		<h1>Online Shopping</h1>
+   		<h3 style="color: white;padding-left: 22%;">India's largest online shopping website</h3>	
+   	</div>
+   	<div class="buttons">
+   		<a href="" class="btn">Login</a>
+   		<a href="home.html" class="btn">Go to Shopping</a>
+   	</div>
+   </header>
+</body>
+</html>

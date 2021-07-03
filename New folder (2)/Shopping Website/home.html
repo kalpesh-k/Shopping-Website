@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+<link rel="icon" type="text/css" href="img/icon.png">
+<style type="text/css">
+*{
+	margin: 0px;
+}
+	.upper{
+		height: 80px;
+		width: auto;
+		background-color:white;
+	}
+	.lower{
+		background-color: #45B39D;
+		height: 30px;
+		width: auto;
+		padding: 12px;
+	}
+	.lower2{
+		background-color: white;
+		height: 30px;
+		width: auto;
+		padding: 12px;
+	}
+	.footer{
+		background-color: #45B39D;
+		height: 30px;
+		width: auto;  
+		padding: 12px;
+	}
+	.btn{
+		border: 1px solid white;
+		padding: 10px 30px;
+		color:black;
+		text-decoration: none;
+		margin-left: 40px;
+		background-color: white;		
+	}
+	.btn:hover{
+		background-color: white;
+		color:black;
+		transition: 0.6s ease;
+		margin-top: 0px;
+	}
+	.one{
+		height: 400px;
+		border-radius: 10px;
+		background-color: white;
+		margin:8px;
+		margin-right: 12px;
+		position: center;
+		align-content: center;
+	}
+	.two,.three,.four,.five,.six,.seven{
+		height: 400px;
+		border-radius: 10px;
+		background-color: white;
+		margin:8px;
+		margin-right: 12px;
+		position: center;
+		align-content: center;
+		
+	}
+	ul.navigation{
+		list-style-type: none;
+		float: right;
+		
+	}
+	ul.navigation li{
+		display: inline-block;
+	}
+	ul.navigation li a{
+		text-decoration: none;
+		color:white;
+		font-size: 25px;
+		font-family: Century Gothic;
+		padding:5px 20px;
+		border:1px solid transparent;
+		transition: 0.6s ease;	
+	}
+	ul.navigation li a:hover{
+		background-color: white;
+		color:black;
+	}
+	ul.menu{
+		list-style-type: none;
+		float: right;
+		margin-right: 25%;
+		margin-left: 15%;
+		
+	}
+	ul.menu li{
+		display: inline-block;
+
+	}
+	ul.menu li a{
+		text-decoration: none;
+		color:black;
+		font-size: 25px;
+		font-family: Century Gothic;
+		padding:5px 20px;
+		border:1px solid transparent;
+		transition: 0.6s ease;
+
+	}
+	.slider{
+		overflow: hidden;
+		
+		height: 500px;
+   		
+   	}
+   	.slider figure div{
+   		float: left;
+   		width: 20%;
+   	}
+	.slider figure img{
+		float: left;
+		width: 100%;
+
+	}
+	.slider figure{
+		position: relative;
+		width: 500%;
+		margin: 0px;
+		left:0;
+		animation:20s kalpesh infinite;
+	}
+	@keyframes kalpesh{
+		0%{
+          left: 0%;
+		}
+		10%{
+           left: 0%;
+		}
+		20%{
+          left: -100%;
+		}
+		30%{
+           left: -100%;
+		}
+		40%{
+          left: -200%;
+		}
+		50%{
+           left: -200%;
+		}
+		60%{
+			left: -400%;
+		}
+		70%{
+			left: -400%;
+		}
+
+	}
+	.space img{
+		padding-left: 100px;
+		padding-right: 50px;
+		padding-top: 30px;
+		padding-bottom: 15px;
+		height: 240px;
+	}
+	.list li{
+		float: left;
+		list-style: none;
+	}
+	.space a{
+		text-decoration: none;
+		font-size: 20px;
+		color: black;
+	}
+	.space a:hover{
+		font-size: 22px;
+	}
+	.space img:hover{
+		height: 260px;
+	}
+	.view{
+		height: 60px;
+		background-color: white;
+		border-bottom: 2px solid #CACFD2;
+	}
+	.heading{
+         margin-top: 12px;
+         margin-left: 20px; 
+         float: left;
+         font-size: 30px;
+	}
+	.viewall{
+		float: right;
+		border:1px solid #45B39D;
+		padding: 8px;
+		font-size: 20px;
+		background-color: #45B39D;
+		color:white;
+		margin-top: 10px;
+		margin-right: 20px;
+		margin-bottom: 10px;
+		border-radius: 5px;
+	}
+	.mensfashion img{
+		height: 180px;
+		padding: 20px;
+		padding-right: 40px;
+	}
+	.mensfashion li{
+		float: left;
+		list-style: none;
+	}
+	.mensfashion a{
+		text-decoration: none;
+		color: black;
+
+	}
+	.mensfashion li a:hover{
+		color: blue;
+
+	}
+	.mensfashion img:hover{
+		color: blue;
+
+	}
+	.price{
+		font-size: 20px;
+		padding-top: 10px;
+		text-align: center;
+		
+	}
+	
+	strike{
+		color: grey;
+		padding-left: 10px;
+		font-size: 12px;
+	}
+	.mobile img{
+		padding-left: 70px;
+		padding-right: 90px;
+
+	}
+	.seven img{
+		width: 250px;
+		height: 150px;
+		padding-top: 40px;
+		padding-left: 10px;
+		padding-right: 30px;
+	}
+	
+
+</style>
+</head>
+<body bgcolor="#DCDCDC">
+<header class="upper">
+	<img src="img/logo.jpg" style="height: 60px; padding-left: 15px; padding-top: 15px;">
+</header>
+<header class="lower">
+   		<ul class="navigation">
+   			<li class="active"><a href="home.html">Home</a></li>
+   			<li><a href="services.html">Services</a></li>
+   			<li><a href="about.html">About</a></li>
+   			<li><a href="feedback.html">Feedback</a></li>
+   			<li><a href="contact.html">Contact</a></li>
+   		</ul>
+</header>
+<header class="lower2">
+	<ul class="menu">
+   			<li class="active"><a href="menlist.html" target="blank">Men's Fashion</a></li>
+   			<li><a href="womenlist.html" target="blank">Women's Fashions</a></li>
+   			<li><a href="mobilelist.html" target="blank">Mobiles</a></li>
+   			<li><a href="laptoplist.html" target="blank">Laptops</a></li>
+   		</ul>
+	
+</header>
+<div class="slider">
+	<figure>
+		<div>
+			<img src="img/men.jpg">
+		</div>
+		<div>
+			<img src="img/women.jpg">
+		</div>
+		<div>
+			<img src="img/mobile2.jpg">
+		</div>
+		<div>
+			<img src="img/mobile.jpg">
+		</div>
+		<div>
+			<img src="img/women.webp">
+		</div>
+		<div>
+			<img src="img/style.webp">
+		</div>
+		<div>
+			<img src="img/laptop.jpg">
+		</div>
+	</figure>
+	
+</div>
+
+
+<section class="three">
+	<section class="view">
+		<h1 class="heading">Men's Fashion</h1>
+		<a href="menlist.html" target="blank"><h2 class="viewall">View All</h2></a>
+	</section>
+	<ul class="mensfashion">
+		<li>
+			<a href="men1.html" target="blank">
+				<figure>
+					<img  src="img/menfashion1.jpeg" style="padding-right: 50px;">
+					<figcaption style="text-align: center; padding-left: 50px;">Men Colorblocked<br> Casual Spread Shirt
+					</figcaption></figure></a>
+					<figcaption  class="price"><b>₹509</b><strike>₹1,399</strike>
+					<font color="green" size="3"> 63% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="men2.html" target="blank">
+				<figure>
+					<img  src="img/menfashion2.jpeg" style="padding-left: 50px;">
+					<figcaption style="text-align: center; padding-left: 50px;">Men Camouflage Casual<br> Spread Shirt</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price"><b>₹629</b><strike>₹1,399</strike>
+				<font color="green" size="3"> 55% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="men3.html" target="blank">
+				<figure>
+					<img  src="img/menfashion3.jpeg" style="padding-left: 50px;">
+					<figcaption style="text-align: center;">Men Printed Casual<br> Regular Shirt</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price"><b>₹549</b><strike>₹999</strike>
+			<font color="green" size="3"> 45% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="men3.html" target="blank">
+				<figure>
+					<img  src="img/menfashion4.jpeg" style="padding-left: 50px;">
+					<figcaption style="text-align: center;">Men Solid Casual<br> REGULAR Shirt</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price"><b>₹499</b><strike>₹999</strike>
+			<font color="green" size="3"> 50% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="men4.html" target="blank">
+				<figure>
+					<img  src="img/menfashion5.jpeg">
+					<figcaption style="text-align: center;">Men Solid Formal<br> Spread Shirt</figcaption>
+				</figure>
+				<figcaption  class="price"><b>₹805</b><strike>₹1,299</strike>
+				<font color="green" size="3"> 38% off</font></figcaption>
+			</a>
+    	</li>
+    	<li>
+			<a href="men6.html" target="blank">
+				<figure>
+					<img  src="img/menfashion6.jpeg" style="padding-left: 50px;">
+					<figcaption style="text-align: center;">Men Solid Casual<br> Mandarin Shirt</figcaption>
+				</figure>
+				<figcaption  class="price"><b>₹549</b><strike>₹1,899</strike>
+				<font color="green" size="3"> 70% off</font></figcaption>
+			</a>
+    	</li>
+    	<li>
+			<a href="men7.html" target="blank">
+				<figure>
+					<img  src="img/menfashion7.jpeg" style="padding-left: 50px;">
+					<figcaption style="text-align: center;">Men Colorblocked<br> Casual Spread Shirt</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price"><b>₹594</b><strike>₹999</strike>
+			<font color="green" size="3"> 63% off</font></figcaption>
+    	</li>
+	</ul>
+</section>
+<section class="four">
+	<section class="view">
+		<h1 class="heading">Women's Fashion</h1>
+		<a href="womenlist.html"><h2 class="viewall">View All</h2></a>
+	</section>
+	<ul class="mensfashion">
+		<li>
+			<a href="women1.html" target="blank">
+				<figure>
+					<img  src="img/women1.jpeg"  style="padding-left: 50px;">
+					<figcaption style="text-align: center;">Paisley Banarasi <br>Cotton Silk</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price" style="text-align: center;"><b>₹509</b><strike>₹1,399</strike>
+					<font color="green" size="3"> 63% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="women2.html" target="blank">
+				<figure>
+					<img  src="img/women2.jpeg" style="padding-left: 45px;">
+					<figcaption style="text-align: center;">Printed Daily Wear<br> Chiffon Saree</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price" style="text-align: center;"><b>₹509</b><strike>₹1,399</strike>
+					<font color="green" size="3"> 63% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="women3.html" target="blank">
+				<figure>
+					<img  src="img/women3.jpeg" style="padding-left: 55px;">
+					<figcaption style="text-align: center;">Embroidered<br> Daily Wear Poly </figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price" style="text-align: center;"><b>₹580</b><strike>₹3,750</strike>
+					<font color="green" size="3"> 84% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="women4.html" target="blank">
+				<figure>
+					<img  src="img/women4.jpeg" style="padding-left: 45px;">
+					<figcaption style="text-align: center;">Casual Half Sleeve<br> Printed Women Top</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price" style="text-align: center;"><b>₹509</b><strike>₹1,399</strike>
+					<font color="green" size="3"> 63% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="women5.html" target="blank">
+				<figure>
+					<img  src="img/women5.jpeg" style="padding-left: 45px;">
+					<figcaption style="text-align: center;">Self Design Banarasi<br> Cotton Saree
+						</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price" style="text-align: center;"><b>₹509</b><strike>₹1,399</strike>
+					<font color="green" size="3"> 63% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="women6.html" target="blank">
+				<figure>
+					<img  src="img/women6.jpeg" style="padding-left: 50px;">
+					<figcaption style="text-align: center;">SATYAM WEAVES Paisley<br> Banarasi Cotton Silk</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price" style="text-align: center;"><b>₹509</b><strike>₹1,399</strike>
+					<font color="green" size="3"> 63% off</font></figcaption>
+    	</li>
+    	
+    	<li>
+			<a href="women7.html" target="blank">
+				<figure>
+					<img  src="img/women8.jpeg" style="padding-left: 45px;">
+					<figcaption style="text-align: center;">Fashion Valley<br> Women Suit</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price"><b>₹509</b><strike>₹1,399</strike>
+					<font color="green" size="3"> 63% off</font></figcaption>
+    	</li>
+    	
+    </ul>
+</section>
+<section class="six">
+	<section class="view">
+		<h1 class="heading">Mobiles</h1>
+		<a href="mobilelist.html"><h2 class="viewall">View All</h2></a>
+	</section>
+	<ul class="mensfashion">
+		<li>
+			<a href="mobile1.html" target="blank">
+				<figure class="mobile">
+					<img  src="img/mobile1.jpeg">
+					<figcaption style="text-align: center;">Realme 3 (Radiant Blue, 32 GB)<br> (3 GB RAM)
+					</figcaption></figure></a>
+					<figcaption  class="price" style="text-align: center;"><b>₹8,990</b><strike>₹1,399</strike>
+					<font color="green" size="3"> 63% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="mobile2.html" target="blank">
+				<figure class="mobile">
+					<img  src="img/mobile2.jpeg">
+					<figcaption style="text-align: center;">Redmi Note 5 Pro (Gold, 64 GB)<br>  (6 GB RAM)</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price" style="text-align: center;"><b>₹11,999</b><strike>₹1,399</strike>
+				<font color="green" size="3"> 63% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="mobile3.html" target="blank">
+				<figure>
+					<img  src="img/mobile3.jpeg" style="padding-left: 50px;">
+					<figcaption style="text-align: center;">OPPO K1 (Piano Black, 64 GB)<br>  (4 GB RAM)</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price" style="text-align: center;"><b>₹13,990</b><strike>₹1,399</strike>
+			<font color="green" size="3"> 63% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="mobile6.html" target="blank">
+				<figure class="mobile">
+					<img  src="img/mobile10.jpeg">
+					<figcaption style="text-align: center;">Redmi Y2 (Black, 32 GB)<br>  (3 GB RAM)</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price" style="text-align: center;"><b>₹11,990</b><strike>₹1,399</strike>
+			<font color="green" size="3"> 63% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="mobile4.html" target="blank">
+				<figure class="mobile">
+					<img  src="img/mobile4.jpeg">
+					<figcaption style="text-align: center;">Vivo Y91 (Ocean Blue, 32 GB)<br>  (2 GB RAM)</figcaption>
+				</figure>
+				<figcaption  class="price" style="text-align: center;"><b>₹11,999</b><strike>₹1,399</strike>
+				<font color="green" size="3"> 63% off</font></figcaption>
+			</a>
+    	</li>
+    	<li>
+			<a href="mobile5.html" target="blank">
+				<figure class="mobile">
+					<img  src="img/mobile5.jpeg">
+					<figcaption style="text-align: center;">Vivo Y95 (Nebula Purple, 64 GB)<br> (4 GB RAM)</figcaption>
+				</figure>
+				<figcaption  class="price" style="text-align: center;"><b>₹13,990</b><strike>₹1,399</strike>
+				<font color="green" size="3"> 63% off</font></figcaption>
+			</a>
+    	</li>
+	</ul>
+</section>
+<section class="seven">
+	<section class="view">
+		<h1 class="heading">Laptops</h1>
+		<a href="laptoplist.html" target="blank"><h2 class="viewall">View All</h2></a>
+	</section>
+	<ul class="mensfashion">
+		
+    	<li>
+			<a href="laptop2.html" target="blank">
+				<figure class="mobile">
+					<img  src="img/l2.jpeg">
+					<figcaption style="text-align: center;">HP 14q Core i3 7th Gen <br>(4 GB/1 TB HDD/Windows 10 Home)</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price" style="text-align: center;"><b>₹17,990</b><strike>₹23,290</strike>
+				<font color="green" size="3"> 22% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="laptop3.html" target="blank">
+				<figure>
+					<img  src="img/l3.jpeg" style="padding-left: 50px;">
+					<figcaption style="text-align: center;">Lenovo Ideapad 330 <br>(4 GB/1 TB HDD/DOS)</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price" style="text-align: center;"><b>₹13,990</b><strike>₹23,996</strike>
+			<font color="green" size="3"> 14% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="laptop4.html" target="blank">
+				<figure class="mobile">
+					<img  src="img/l23.jpeg">
+					<figcaption style="text-align: center;">Dell 15q Core i3 7th Gen<br>(4 GB/1 TB HDD/Windows 10 Home)</figcaption>
+				</figure>
+			</a>
+			<figcaption  class="price" style="text-align: center;"><b>₹28,990</b><strike>₹35,290</strike>
+			<font color="green" size="3"> 27% off</font></figcaption>
+    	</li>
+    	<li>
+			<a href="laptop5.html" target="blank">
+				<figure class="mobile">
+					<img  src="img/l5.jpeg">
+					<figcaption style="text-align: center;">Asus Core i3 6th Gen <br>(6 GB/1 TB HDD/Windows 10 Home)</figcaption>
+				</figure>
+				<figcaption  class="price" style="text-align: center;"><b>₹25,990</b><strike>₹38,460</strike>
+				<font color="green" size="3"> 16% off</font></figcaption>
+			</a>
+    	</li>
+    	<li>
+			<a href="laptop6.html" target="blank">
+				<figure class="mobile">
+					<img  src="img/l41.jpeg">
+					<figcaption style="text-align: center;">Dell Inspiron 15 3000 <br>(4 GB/1 TB HDD/Windows 10 Home)</figcaption>
+				</figure>
+				<figcaption  class="price" style="text-align: center;"><b>₹31,990</b><strike>₹32,290</strike>
+				<font color="green" size="3"> 10% off</font></figcaption>
+			</a>
+    	</li>
+	</ul>
+</section>
+<footer class="footer" style="font-family: Century Gothic;font-size: 20px;"><h3 align="center">&copy2019 All Rights Reserved. Developed By ShopMe.com</h3></footer>
+</body>
+</html>
